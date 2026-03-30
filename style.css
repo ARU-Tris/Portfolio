@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+header, main, section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+a {
+  color: #9ad0ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  margin-bottom: 12px;
+}
+
+section {
+  border-top: 1px solid #333;
+}
