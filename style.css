@@ -1000,3 +1000,210 @@ textarea {
     margin-top: 22px;
   }
 }
+
+/* =========================
+   Contact Page - Split Layout
+   ========================= */
+
+.contact-page-shell {
+  background:
+    linear-gradient(180deg, #040404 0%, #070707 100%);
+}
+
+.about-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - var(--header-height));
+  margin-top: var(--header-height);
+  border-bottom: 1px solid var(--line);
+}
+
+.about-split-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 56px;
+  background: linear-gradient(180deg, #161616 0%, #1d1d1d 100%);
+}
+
+.about-split-copy-inner {
+  width: min(100%, 560px);
+  text-align: center;
+}
+
+.about-split-title {
+  margin: 0 0 36px;
+  font-family: var(--font-title);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+}
+
+.about-split-text p {
+  margin: 0 0 22px;
+  color: var(--text-soft);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.about-split-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-split-image {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.about-split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(1);
+}
+
+/* =========================
+   Contact Focus Block
+   ========================= */
+
+.contact-focus {
+  padding: 92px 0 110px;
+  background:
+    linear-gradient(180deg, #080808 0%, #060606 100%);
+}
+
+.contact-focus-inner {
+  width: min(calc(100% - 48px), 760px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-focus-title {
+  margin: 0 0 18px;
+  font-family: var(--font-title);
+  font-size: clamp(34px, 5vw, 58px);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 0.96;
+}
+
+.contact-focus-copy {
+  margin: 0 auto 34px;
+  max-width: 560px;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.contact-focus-box {
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-focus-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  transition:
+    background var(--ease),
+    transform var(--ease),
+    opacity var(--ease);
+}
+
+.contact-focus-line:first-child {
+  border-top: none;
+}
+
+.contact-focus-line:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.contact-focus-line:active {
+  transform: scale(0.995);
+}
+
+.contact-focus-label {
+  color: var(--text-faint);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-focus-value {
+  color: var(--text);
+  font-family: var(--font-title);
+  font-size: clamp(22px, 3vw, 38px);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.04;
+  text-align: right;
+  word-break: break-word;
+}
+
+@media (max-width: 1100px) {
+  .about-split {
+    grid-template-columns: 1fr;
+  }
+
+  .about-split-copy {
+    order: 2;
+  }
+
+  .about-split-image {
+    order: 1;
+    min-height: 520px;
+  }
+
+  .about-split-copy-inner {
+    width: min(100%, 680px);
+    text-align: left;
+  }
+}
+
+@media (max-width: 820px) {
+  .about-split-copy {
+    padding: 48px 22px;
+  }
+
+  .about-split-title {
+    margin-bottom: 26px;
+  }
+
+  .about-split-text p {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .about-split-image {
+    min-height: 420px;
+  }
+
+  .contact-focus {
+    padding: 74px 0 90px;
+  }
+
+  .contact-focus-inner {
+    width: min(calc(100% - 28px), 760px);
+  }
+
+  .contact-focus-line {
+    display: block;
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  .contact-focus-value {
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+  }
+}
