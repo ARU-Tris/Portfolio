@@ -1,41 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARU_Tris Portfolio</title>
+  <title>ARU_Tris</title>
+  <meta
+    name="description"
+    content="ARU_Tris portfolio — cinematographer and film projects."
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>ARU_Tris</h1>
-    <p>Filmmaker / Video Creator</p>
-    <p>
-      <a href="https://www.youtube.com/channel/UCabCyM4a4LyzNHXJDA_8Q6A" target="_blank">
-        Visit My YouTube Channel
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="ARU_Tris home">
+        <img src="assets/logo.png" alt="ARU_Tris logo" />
       </a>
-    </p>
+
+      <nav class="nav-center" aria-label="Primary navigation">
+        <div class="nav-links">
+          <a class="active" href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>About</h2>
-      <p>
-        I create cinematic videos and visual works.
-      </p>
+  <main class="page-shell">
+    <section class="hero" id="top">
+      <div class="hero-media">
+        <video autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+          <source src="assets/hero.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">ARU_Tris</h1>
+          <p class="hero-subtitle">Cinematographer</p>
+        </div>
+
+        <a class="hero-scroll" href="#projects">Scroll</a>
+      </div>
     </section>
 
-    <section>
-      <h2>Works</h2>
-      <p>
-        My selected works will be shown here.
-      </p>
-    </section>
+    <section class="projects-preview" id="projects">
+      <div class="content-width">
+        <div class="projects-preview-header">
+          <div class="projects-preview-copy">
+            <p class="page-kicker">Selected Work</p>
+            <h2 class="section-heading">Projects</h2>
+            <p class="section-subheading">
+              A selection of films and visual works. The newest entries are placed first.
+            </p>
+          </div>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: your-email@example.com</p>
+          <div>
+            <a class="ghost-button" href="projects.html">Open Projects Page</a>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <a
+            class="project-card"
+            href="https://youtu.be/_7PJ8PryIfI"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open 260325.mp4 on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/013.png" alt="Thumbnail for 260325.mp4" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">260325.mp4</h3>
+              <p class="project-index">Project 013</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/kU0PaRrXRmI"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open is this what depression feels like on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/012.png" alt="Thumbnail for is this what depression feels like" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">is this what depression feels like</h3>
+              <p class="project-index">Project 012</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/Z6FDwK1wFuU"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open 260307.mov on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/011.png" alt="Thumbnail for 260307.mov" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">260307.mov</h3>
+              <p class="project-index">Project 011</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/VfkJnNZLdnk"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open GrandTour_2026.mp4 on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/010.png" alt="Thumbnail for GrandTour_2026.mp4" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">GrandTour_2026.mp4</h3>
+              <p class="project-index">Project 010</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/Oyc4v0vVIho"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open 260214.mov on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/009.png" alt="Thumbnail for 260214.mov" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">260214.mov</h3>
+              <p class="project-index">Project 009</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/ljAf76QcOoM"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open 260109.mov on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/008.png" alt="Thumbnail for 260109.mov" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">260109.mov</h3>
+              <p class="project-index">Project 008</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/Go4_wiYonsU"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Monoluge.mp4 on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/007.png" alt="Thumbnail for Monoluge.mp4" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">Monoluge.mp4</h3>
+              <p class="project-index">Project 007</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/tS_18KNxlKI"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Friends.mov on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/006.png" alt="Thumbnail for Friends.mov" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">Friends.mov</h3>
+              <p class="project-index">Project 006</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/ZGwf8zmara0"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Friend.mp4 on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/005.png" alt="Thumbnail for Friend.mp4" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">Friend.mp4</h3>
+              <p class="project-index">Project 005</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/hENGOKhUZ58"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Elevator.mp4 on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/004.png" alt="Thumbnail for Elevator.mp4" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">Elevator.mp4</h3>
+              <p class="project-index">Project 004</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/h4ga4uegSQs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Day.mp4 on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/003.png" alt="Thumbnail for Day.mp4" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">Day.mp4</h3>
+              <p class="project-index">Project 003</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/nSZxhD_pFD0"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open 부조화 on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/002.png" alt="Thumbnail for 부조화" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">부조화</h3>
+              <p class="project-index">Project 002</p>
+            </div>
+          </a>
+
+          <a
+            class="project-card"
+            href="https://youtu.be/dppXRyEbYRA"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Depression.mov on YouTube"
+          >
+            <div class="project-thumb-wrap">
+              <img src="assets/thumbnails/001.png" alt="Thumbnail for Depression.mov" />
+            </div>
+            <div class="project-meta">
+              <h3 class="project-title">Depression.mov</h3>
+              <p class="project-index">Project 001</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="content-width">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2 class="footer-brand-title">ARU_Tris</h2>
+          <p class="footer-brand-copy">Cinematographer</p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Business</h3>
+          <div class="footer-list">
+            <a href="mailto:jaydendonghyun@gmail.com">jaydendonghyun@gmail.com</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Links</h3>
+          <div class="footer-list">
+            <a
+              href="https://www.instagram.com/jdh_kim/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @jdh_kim
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCabCyM4a4LyzNHXJDA_8Q6A"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @aru_tris
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Legal</h3>
+          <div class="footer-list">
+            <span>Terms</span>
+            <span>Privacy</span>
+            <span>Policy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>ARU_Tris Studios</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
